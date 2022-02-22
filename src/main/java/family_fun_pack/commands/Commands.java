@@ -25,6 +25,7 @@ public class Commands {
     this.registerCommand(new HClipCommand());
     this.registerCommand(new RaytraceCommand());
     this.registerCommand(new UnloadedRideCommand());
+    this.registerCommand(new StalkCommand());
     this.registerCommand(new OpenDonkeyCommand());
     this.registerCommand(new DisconnectCommand());
     this.registerCommand(new SyncMountCommand());
@@ -48,6 +49,7 @@ public class Commands {
     this.registerCommand(new PopulateCommand());
     this.registerCommand(new WorldDownloadCommand());
     this.registerCommand(new TrackCommand());
+    this.registerCommand(new IgnoreCommand());
     this.registerCommand(new ReOpenCommand());
     this.registerCommand(new NearestStrongholdCommand());
     this.registerCommand(new RollbackDupeCommand());

@@ -24,11 +24,13 @@ public class Modules {
     this.modules = new ArrayList<Module>();
     this.modules.add(new BookFormatModule());
     this.modules.add(new CommandsModule());
+    this.modules.add(new IgnoreModule());
     this.modules.add(new PacketInterceptionModule());
     this.modules.add(new PigPOVModule());
     this.modules.add(new PortalInvulnerabilityModule());
     this.modules.add(new SearchModule());
     this.modules.add(new NoCloseModule());
+    this.modules.add(new StalkModule());
     this.modules.add(new TraceModule());
     this.modules.add(new TrueDurabilityModule());
     this.modules.add(new UndeadModule());

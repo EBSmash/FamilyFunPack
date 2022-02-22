@@ -1,6 +1,5 @@
 package family_fun_pack.modules;
 
-import family_fun_pack.FamilyFunPack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderPig;
 import net.minecraft.entity.passive.EntityPig;
@@ -12,14 +11,11 @@ import family_fun_pack.render.NoRenderPig;
 
 /* Lower player height, be able to see when travelling 1 by 1 tunnels on pig */
 
-
 @SideOnly(Side.CLIENT)
 public class PigPOVModule extends Module {
 
-
   public PigPOVModule() {
     super("Pig POV", "Pig Point Of View");
-    FamilyFunPack.addModuleKey(0, this);
   }
 
   protected void enable() {
@@ -29,13 +25,6 @@ public class PigPOVModule extends Module {
   }
 
   protected void disable() {
-    Minecraft mc = Minecraft.getMinecraft();
-    mc.player.eyeHeight = mc.player.getDefaultEyeHeight();
-    mc.getRenderManager().entityRenderMap.put(EntityPig.class, new RenderPig(mc.getRenderManager()));
-  }
-
-  @Override
-  public void onDisconnect() {
     Minecraft mc = Minecraft.getMinecraft();
     mc.player.eyeHeight = mc.player.getDefaultEyeHeight();
     mc.getRenderManager().entityRenderMap.put(EntityPig.class, new RenderPig(mc.getRenderManager()));
